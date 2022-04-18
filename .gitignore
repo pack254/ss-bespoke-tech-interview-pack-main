@@ -1,0 +1,14 @@
+/silverstripe-cache/
+/.env
+/vendor/
+/themes/simple/
+/_resources/
+/public/_resources/
+/node_modules/
+
+## Dev
+/.vagrant/
+Vagrantfile
+Dockerfile
+/.idea/
+error.log

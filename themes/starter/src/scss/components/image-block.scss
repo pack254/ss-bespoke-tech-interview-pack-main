@@ -1,0 +1,18 @@
+
+.image-block {
+    &__content {
+        @include desktop {
+            display: inline-block;
+            padding-right: 20px;
+            vertical-align: top;
+            width: 50%;
+        }
+    }
+
+    &__image {
+        @include desktop {
+            display: inline-block;
+            width: 50%;
+        }
+    }
+}

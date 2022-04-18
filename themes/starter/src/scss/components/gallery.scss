@@ -1,0 +1,15 @@
+.gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    display: grid;
+    margin: 40px 0;
+
+    @include desktop {
+        gap: 40px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    &__image {
+        width: 100%;
+    }
+}

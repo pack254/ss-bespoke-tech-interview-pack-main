@@ -1,0 +1,16 @@
+// Core styles
+@import 'core/variables';
+@import 'core/mixins';
+@import 'core/base';
+@import 'core/form';
+
+// Layouts
+@import 'layout/container';
+@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/page';
+
+// Components
+@import 'components/gallery';
+@import 'components/image-block';
+@import 'components/nav-item';

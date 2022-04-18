@@ -1,0 +1,35 @@
+.header {
+    background: $color-black;
+    padding: 40px 0 20px;
+    color: white;
+
+    &__title {
+        margin: 0 0 20px;
+    }
+
+    &__title-link {
+        color: $color-white;
+        font-size: 2rem;
+    }
+
+    &__items {
+        display: none;
+        margin: 0;
+        padding: 0;
+
+        @include desktop {
+            display: block;
+        }
+    }
+
+    &__menu-button {
+        @include desktop {
+            display: none;
+        }
+    }
+
+    &__mobile-items {
+        margin: 0;
+        padding: 0;
+    }
+}
