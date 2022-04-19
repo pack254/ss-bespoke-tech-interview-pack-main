@@ -10,7 +10,7 @@ use SilverStripe\Forms\RequiredFields;
 use SilverStripe\Forms\TextareaField;
 use SilverStripe\Forms\TextField;
 use SilverStripe\ORM\ValidationResult;
-use Model\InterviewCandidate;
+use SSTechInterview\Model\InterviewCandidate;
 
 class InterviewCandidatePageController extends PageController
 {
@@ -44,7 +44,7 @@ class InterviewCandidatePageController extends PageController
 
     public function doCandidateSubmit(array $data, Form $form)
     {
-        if (strlen($data['CoverLetter']) < 20) {
+        if (str_word_count($data['CoverLetter']) < 20) {
             $form->sessionFieldError('Your cover letter should be at least 20 words', 'CoverLetter');
             return $this->redirectBack();
         }

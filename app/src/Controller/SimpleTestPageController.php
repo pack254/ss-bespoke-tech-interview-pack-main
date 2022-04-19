@@ -1,5 +1,5 @@
 <?php
-namespace SSTechInterview\Page;
+namespace SSTechInterview\Model;
 use PageController;
 use Model\SimpleFormComment;
 use SilverStripe\Forms\Form;
