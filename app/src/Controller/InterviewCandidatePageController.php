@@ -12,7 +12,7 @@ use SilverStripe\Forms\TextField;
 use SilverStripe\ORM\ValidationResult;
 use Model\InterviewCandidate;
 
-class InterviewCandidateController extends PageController
+class InterviewCandidatePageController extends PageController
 {
     private static $allowed_actions = [
         'CandidateSubmissionForm',

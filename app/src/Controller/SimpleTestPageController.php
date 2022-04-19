@@ -2,7 +2,10 @@
 namespace SSTechInterview\Page;
 use PageController;
 use Model\SimpleFormComment;
-class SimpleTestController extends PageController
+use SilverStripe\Forms\Form;
+use SilverStripe\Forms\FieldList;
+use SilverStripe\Forms\FileField;
+class SimpleTestPageController extends PageController
 {
 
     private static $allowed_actions = [
