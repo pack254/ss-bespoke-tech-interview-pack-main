@@ -13,7 +13,6 @@
         </ul>
         
         <button @click="openMobileMenu" class="header__menu-button">Open menu</button>
-
         <flyout-panel
             :open="mobileMenuOpen"
             @close="closeMobileMenu"
@@ -25,6 +24,9 @@
                         <a class="nav-item__link" href="$Link">$MenuTitle</a>
                     </li>
                 <% end_loop %>
+                <li class="nav-item">
+                    <a class="nav-item__link" href="$Link" @click="closeMobileMenu">Close</a>
+                </li>
             </ul>
         </flyout-panel>
     </nav>
