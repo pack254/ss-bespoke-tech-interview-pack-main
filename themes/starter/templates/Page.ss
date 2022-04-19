@@ -19,7 +19,7 @@
 
             <% include Footer %>
         </div>
-        $CandidateSubmissionForm
+        
         <% require themedJavascript("dist/app") %>
     </body>
 </html>
