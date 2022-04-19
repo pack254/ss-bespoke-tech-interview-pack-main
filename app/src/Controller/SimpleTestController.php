@@ -6,7 +6,8 @@ class SimpleTestController extends PageController
 {
 
     private static $allowed_actions = [
-        'CommentSimpleForm'
+        'CommentSimpleForm',
+        'test'
     ];
 
     public function CommentSimpleForm()
@@ -23,6 +24,11 @@ class SimpleTestController extends PageController
             ),
         );
         return $form;
+    }
+
+    public function test()
+    {
+        die('it works');
     }
 
     public function HandleSubmit($data, $form){

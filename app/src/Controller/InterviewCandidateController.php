@@ -16,6 +16,7 @@ class InterviewCandidateController extends PageController
 {
     private static $allowed_actions = [
         'CandidateSubmissionForm',
+        'test'
     ];
 
     public function CandidateSubmissionForm()
@@ -34,6 +35,11 @@ class InterviewCandidateController extends PageController
             RequiredFields::create('Name', 'CoverLetter', 'CV')
         );
         return $form;
+    }
+
+    public function test()
+    {
+        die('it works');
     }
 
     public function doCandidateSubmit(array $data, Form $form)

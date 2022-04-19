@@ -11,7 +11,7 @@
             <% end_loop %>
             
         </ul>
-        Test2
+        
         <button @click="openMobileMenu" class="header__menu-button">Open menu</button>
 
         <flyout-panel

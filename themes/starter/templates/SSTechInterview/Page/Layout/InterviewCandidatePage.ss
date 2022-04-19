@@ -5,6 +5,7 @@
         <div class="row">
             <div class="col-md-4">
                 $CandidateSubmissionForm
+                $test
             </div>    
         </div>    
     </div>    
