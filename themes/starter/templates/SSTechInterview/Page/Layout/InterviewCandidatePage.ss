@@ -1,5 +1,15 @@
-<div class="page page--home">
+<div class="page">
     <h1 class="page__title">$Title</h1>
-$CandidateSubmissionForm
-This is test 2
+<div class="image-block__content">$Content</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                $CandidateSubmissionForm
+            </div>    
+        </div>    
+    </div>    
 </div>
+<% if $Form %>
+    $Form
+    $CandidateSubmissionForm
+<% end_if %>

@@ -1,7 +1,7 @@
 <?php
 use SilverStripe\ORM\DataObject;
 
-Class SimpleFormCommnet extends DataObject{
+Class SimpleFormComment extends DataObject{
     private static $db = [
         'Name' => 'Text',
         'Commnet' => 'Text'

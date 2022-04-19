@@ -1,6 +1,7 @@
 <?php
 namespace SSTechInterview\Page;
 use PageController;
+use Model\SimpleFormComment;
 class SimpleTestController extends PageController
 {
 
@@ -26,7 +27,7 @@ class SimpleTestController extends PageController
 
     public function HandleSubmit($data, $form){
         $comment = SimpleFormComment::create();
-        $comment->SimpleFromPageID = $this->ID;
+        $comment->SimpleTestPageID = $this->ID;
         $form->saveInfo($comment);
         $comment->write();
         return $this->redirectBack();

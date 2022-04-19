@@ -3,5 +3,5 @@
     <div class="page__content">$Content</div>
 </div>
 <% if $Form %>
-    $Form
+  $Form  
 <% end_if %>

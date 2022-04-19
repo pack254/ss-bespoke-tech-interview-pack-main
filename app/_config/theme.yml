@@ -8,3 +8,6 @@ SilverStripe\View\SSViewer:
     - 'starter'
     - 'advanced'
     - '$default'
+Only:
+  environment: 'dev'
+source_file_comments: true

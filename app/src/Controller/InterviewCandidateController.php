@@ -10,7 +10,7 @@ use SilverStripe\Forms\RequiredFields;
 use SilverStripe\Forms\TextareaField;
 use SilverStripe\Forms\TextField;
 use SilverStripe\ORM\ValidationResult;
-use SSTechInterview\Model\InterviewCandidate;
+use Model\InterviewCandidate;
 
 class InterviewCandidateController extends PageController
 {
@@ -20,7 +20,7 @@ class InterviewCandidateController extends PageController
 
     public function CandidateSubmissionForm()
     {
-        return Form::create(
+        $form = Form::create(
             $this,
             'CandidateSubmissionForm',
             FieldList::create(
@@ -33,6 +33,7 @@ class InterviewCandidateController extends PageController
             ),
             RequiredFields::create('Name', 'CoverLetter', 'CV')
         );
+        return $form;
     }
 
     public function doCandidateSubmit(array $data, Form $form)
